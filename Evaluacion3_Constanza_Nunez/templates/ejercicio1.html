@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario de Notas</title>
+  <link rel="stylesheet" href="/static/estilo.css">
+</head>
+<body>
+  <h1>Formulario de Notas</h1>
+
+  <!-- Formulario para ingresar 3 notas y asistencia -->
+  <form method="post">
+    <label>Nota 1:</label>
+    <input type="number" name="nota1" min="10" max="70" required
+           oninvalid="this.setCustomValidity('Ingresa una nota entre 10 y 70')"
+           oninput="this.setCustomValidity('')"><br>
+
+    <label>Nota 2:</label>
+    <input type="number" name="nota2" min="10" max="70" required
+           oninvalid="this.setCustomValidity('Ingresa una nota entre 10 y 70')"
+           oninput="this.setCustomValidity('')"><br>
+
+    <label>Nota 3:</label>
+    <input type="number" name="nota3" min="10" max="70" required
+           oninvalid="this.setCustomValidity('Ingresa una nota entre 10 y 70')"
+           oninput="this.setCustomValidity('')"><br>
+
+    <label>Asistencia (%):</label>
+    <input type="number" name="asistencia" min="0" max="100" required
+           oninvalid="this.setCustomValidity('Ingresa un porcentaje entre 0 y 100')"
+           oninput="this.setCustomValidity('')"><br>
+
+    <button type="submit">Enviar</button>
+  </form>
+
+  <!-- Resultado del cálculo -->
+  {% if resultado %}
+    <h2>{{ resultado }}</h2>
+  {% endif %}
+
+  <p><a href="/">Volver al menú</a></p>
+</body>
+</html>

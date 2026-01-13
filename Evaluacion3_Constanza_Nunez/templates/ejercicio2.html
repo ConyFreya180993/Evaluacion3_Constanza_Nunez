@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario de Nombres</title>
+  <link rel="stylesheet" href="/static/estilo.css">
+</head>
+<body>
+  <h1>Formulario de Nombres</h1>
+
+  <!-- Formulario para ingresar 3 nombres -->
+  <form method="post">
+    <label>Nombre 1:</label>
+    <input type="text" name="nombre1" required
+           oninvalid="this.setCustomValidity('Ingresa un nombre válido')"
+           oninput="this.setCustomValidity('')"><br>
+
+    <label>Nombre 2:</label>
+    <input type="text" name="nombre2" required
+           oninvalid="this.setCustomValidity('Ingresa un nombre válido')"
+           oninput="this.setCustomValidity('')"><br>
+
+    <label>Nombre 3:</label>
+    <input type="text" name="nombre3" required
+           oninvalid="this.setCustomValidity('Ingresa un nombre válido')"
+           oninput="this.setCustomValidity('')"><br>
+
+    <button type="submit">Enviar</button>
+  </form>
+
+  <!-- Resultado del cálculo -->
+  {% if resultado %}
+    <h2>{{ resultado }}</h2>
+  {% endif %}
+
+  <p><a href="/">Volver al menú</a></p>
+</body>
+</html>

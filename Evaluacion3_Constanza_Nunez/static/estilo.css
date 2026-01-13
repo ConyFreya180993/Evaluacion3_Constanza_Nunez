@@ -1,0 +1,59 @@
+/* Estilo general del cuerpo */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* Título principal en negro y negrita */
+h1 {
+  color: black;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+/* Formularios centrados y ordenados */
+form {
+  margin: 20px auto;
+  display: grid;
+  gap: 12px;
+  max-width: 300px;
+  text-align: left;
+}
+
+/* Etiquetas de los campos */
+label {
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+/* Campos de entrada */
+input {
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Botones con azul exacto */
+button {
+  background-color: #007bff; /* Azul botón imagen de referencia */
+  color: white;
+  font-size: 18px;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/* Efecto al pasar el mouse */
+button:hover {
+  background-color: #0056b3; /* Azul más oscuro para hover */
+}
+
+/* Resultado del formulario */
+h2 {
+  margin-top: 30px;
+  color: green;
+}
